@@ -1,0 +1,81 @@
+.exhibition {
+  height: 380px;
+  background: #6acb97;
+  position: relative;
+}
+
+.exhibition i {
+  color: white;
+  font-size: 33px;
+  cursor: pointer;
+}
+
+.exhibition__social {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.exhibition__social i {
+  font-size: 15px;
+  margin: 0 10px;
+}
+.btnbox {
+  display: flex;
+  height: 380px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.exhibition__info {
+  position: absolute;
+  bottom: 70px;
+  left: 183px;
+  height: 230px;
+  color: white;
+}
+
+.exhibition__info__name {
+  font-size: 40px;
+  height: 50px;
+}
+
+.exhibition__info__discription {
+  font-family: "GmarketSansTTFLight";
+}
+.exhibition__info__date {
+  font-family: "GmarketSansTTFLight";
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.exhibition__info__link {
+  all: unset;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "GmarketSansTTFLight";
+  font-size: 20px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.exhibition__info__link:hover {
+  background-color: #8ce6b6;
+}
+
+.exhibition__photo {
+  position: absolute;
+  height: 400px;
+  width: 630px;
+  background-color: #8ce6b6;
+  bottom: -90px;
+  right: 100px;
+  border-radius: 35px;
+  box-shadow: 0px 3px 99px #00000029;
+}

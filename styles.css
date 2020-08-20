@@ -1,0 +1,24 @@
+@import "reset.css";
+
+@import "components/header.css";
+@import "components/nav.css";
+@import "components/exhibition.css";
+@import "components/daily.css";
+
+@font-face {
+  font-family: "GmarketSansTTFMedium";
+  src: url("GmarketSansTTF/GmarketSansTTFMedium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GmarketSansTTFBold";
+  src: url("GmarketSansTTF/GmarketSansTTFBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GmarketSansTTFLight";
+  src: url("GmarketSansTTF/GmarketSansTTFLight.ttf") format("truetype");
+}
+
+body {
+  font-family: "GmarketSansTTFMedium";
+  box-sizing: content-box;
+}

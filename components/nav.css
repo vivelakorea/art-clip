@@ -1,0 +1,22 @@
+.nav {
+  width: 480px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+}
+
+.nav__home {
+  position: relative;
+}
+
+.green-box {
+  width: 70px;
+  height: 10px;
+  background-color: #8ce6b6;
+  position: absolute;
+  bottom: 7px;
+  left: -5px;
+  z-index: -1;
+}

@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header__logo {
+  position: relative;
+  width: 120px;
+  font-size: 20px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+}
+.header__logo .green-dot {
+  position: absolute;
+  background-color: #8ce6b6;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  right: 20px;
+  top: -8px;
+  z-index: -1;
+}
+.header__column {
+  width: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__column__search input {
+  all: unset;
+  border: 1px solid #d9f2e4;
+  box-shadow: 0 0 5px 5px #d9f2e4;
+  width: 230px;
+  height: 37px;
+  border-radius: 18.5px;
+  padding: 0 18.5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.header__column__search .fa-search {
+  cursor: pointer;
+}
+
+.header__column a {
+  all: unset;
+  cursor: pointer;
+}
+
+.header__column a:visited {
+  all: unset;
+  color: black;
+  cursor: pointer;
+}
+
+.header__column__divider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
