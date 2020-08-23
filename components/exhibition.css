@@ -1,7 +1,7 @@
 .exhibition {
   height: 380px;
-  background: #6acb97;
   position: relative;
+  transition: 0.4s ease-in-out;
 }
 
 .exhibition i {
@@ -47,6 +47,8 @@
   font-family: "GmarketSansTTFLight";
   margin-top: 100px;
   margin-bottom: 10px;
+  position: absolute;
+  bottom: 15px;
 }
 .exhibition__info__link {
   all: unset;
@@ -62,7 +64,9 @@
   font-size: 20px;
   font-weight: 200;
   cursor: pointer;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  bottom: -20px;
 }
 
 .exhibition__info__link:hover {
@@ -72,10 +76,10 @@
 .exhibition__photo {
   position: absolute;
   height: 400px;
-  width: 630px;
+  width: 400px;
   background-color: #8ce6b6;
   bottom: -90px;
-  right: 100px;
+  right: 250px;
   border-radius: 35px;
   box-shadow: 0px 3px 99px #00000029;
 }
