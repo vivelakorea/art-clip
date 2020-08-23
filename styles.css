@@ -5,6 +5,8 @@
 @import "components/exhibition.css";
 @import "components/daily.css";
 
+@import "components/artist.css";
+
 @font-face {
   font-family: "GmarketSansTTFMedium";
   src: url("GmarketSansTTF/GmarketSansTTFMedium.ttf") format("truetype");

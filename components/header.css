@@ -63,3 +63,7 @@
   height: 40px;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.header__column__profile i {
+  font-size: 40px;
+}
