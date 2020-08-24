@@ -34,11 +34,12 @@ const set = () => {
 
   btn.addEventListener("mouseenter", () => {
     btn.style.backgroundColor = btnColorList[counter];
+    btn.removeEventListener("mouseenter", arguments.callee);
   });
   btn.addEventListener("mouseleave", () => {
     btn.style.backgroundColor = backgroundColorList[counter];
+    btn.removeEventListener("mouseleave", arguments.callee);
   });
-  photo.src = imgSrcList[counter];
 };
 
 //초기화
@@ -47,16 +48,38 @@ set();
 
 //클릭이벤트
 
+const fadeout = () => {
+  photo.style.opacity -= 1 / 10;
+};
+
 const handlePrevious = (e) => {
+  photo.style.opacity = 1;
+  let fade = window.setInterval(fadeout, 10);
+  setTimeout(() => {
+    clearInterval(fade);
+    photo.style.opacity = 1;
+    photo.src = imgSrcList[counter];
+  }, 400);
+
   counter--;
   if (counter < 0) counter += backgroundColorList.length;
+
   set();
 };
 
 const handleNext = (e) => {
+  photo.style.opacity = 1;
+  let fade = window.setInterval(fadeout, 10);
+  setTimeout(() => {
+    clearInterval(fade);
+    photo.style.opacity = 1;
+    photo.src = imgSrcList[counter];
+  }, 400);
+
   counter++;
   if (counter >= backgroundColorList.length)
     counter -= backgroundColorList.length;
+
   set();
 };
 
