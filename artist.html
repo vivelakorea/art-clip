@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header js-header">
       <div class="header__logo">
         art clip
         <div class="green-dot"></div>
       </div>
       <div class="header__column">
         <span class="header__column__search">
-          <form action="#" method="GET">
-            <!-- todo: 돋보기 클릭했을때 검색창 뜨게 -->
-            <input type="text" />
+          <form class="search-form js-searchForm" action="#" method="GET">
+            <input class="search-text js-searchText" type="text" />
             <i class="fas fa-search"></i>
           </form>
         </span>
@@ -27,15 +26,17 @@
     </header>
     <main>
       <div class="artist">
-        <div class="artist__info">
+        <div class="artist__container">
           <div class="artist__follower">팔로워 XX명</div>
           <div class="artist__following">팔로잉 XX명</div>
-          <div class="artist__photo"><i class="fas fa-user-circle"></i></div>
-          <div class="artist__info__name">작가 이름</div>
-          <div class="artist__info__discription">작가 소개</div>
-          <div class="artist__info__location">작가 위치</div>
-          <div class="artist__info__email">작가 이메일</div>
-          <div class="artist__info__others">작가 전화번호 등 개인정보</div>
+          <div class="artist__info">
+            <div class="artist__photo"><i class="fas fa-user-circle"></i></div>
+            <div class="artist__info__name">작가 이름</div>
+            <div class="artist__info__discription">작가 소개</div>
+            <div class="artist__info__location">작가 위치</div>
+            <div class="artist__info__email">작가 이메일</div>
+            <div class="artist__info__others">작가 전화번호 등 개인정보</div>
+          </div>
         </div>
       </div>
       <div class="artist__nav">
@@ -72,5 +73,6 @@
       src="https://kit.fontawesome.com/8bc7f5e605.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/search.js"></script>
   </body>
 </html>

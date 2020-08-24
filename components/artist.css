@@ -1,13 +1,27 @@
 .artist {
   height: 440px;
   background: #6acb97;
+  justify-items: center;
+}
+
+.artist__container {
   position: relative;
+  box-sizing: border-box;
+  padding: 40px;
+  height: 380px;
+  width: 380px;
+  top: 30px;
+  left: 200px;
+
+  color: white;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px grey;
+  background-color: black;
 }
 
 .artist__follower {
-  position: absolute;
-  top: 30px;
-  left: 230px;
+  position: relative;
+  right: -180px;
   width: 120px;
   height: 40px;
   background-color: white;
@@ -20,9 +34,8 @@
 }
 
 .artist__following {
-  position: absolute;
-  top: 70px;
-  left: 230px;
+  position: relative;
+  right: -180px;
   width: 120px;
   height: 40px;
   background-color: white;
@@ -34,23 +47,13 @@
   align-items: center;
 }
 
-.artist__info {
-  position: absolute;
-  padding: 40px;
-  box-sizing: border-box;
-  background-color: black;
-
-  height: 380px;
-  width: 380px;
-  top: 30px;
-  left: 200px;
-  color: white;
-  border-radius: 30px;
-  box-shadow: 5px 5px 5px grey;
-}
-
 .artist__photo i {
   font-size: 70px;
+}
+
+.artist__info {
+  position: relative;
+  top: -70px;
 }
 
 .artist__info__name {
@@ -79,9 +82,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
+  height: 60px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .works__container {
