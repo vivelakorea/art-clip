@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>art clip</title>
+    <link rel="icon" href="imgs/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header js-header">
       <div class="header__logo">
         art clip
         <div class="green-dot"></div>
       </div>
       <div class="header__column">
         <span class="header__column__search">
-          <form action="#" method="GET">
-            <!-- todo: 돋보기 클릭했을때 검색창 뜨게 -->
-            <input type="text" />
+          <form class="search-form js-searchForm" action="#" method="GET">
+            <input class="search-text js-searchText" type="text" />
             <i class="fas fa-search"></i>
           </form>
         </span>
@@ -54,7 +54,9 @@
             ><button class="exhibition__info__link">전시 바로가기</button></a
           >
         </div>
-        <div class="exhibition__photo"></div>
+        <div class="exhibition__indicators">
+        </div>
+        <img class="exhibition__photo" ></img>
       </div>
       <div class="today"></div>
       <div class="daily">
@@ -286,6 +288,8 @@
       src="https://kit.fontawesome.com/8bc7f5e605.js"
       crossorigin="anonymous"
     ></script>
-    <script src="daily.js"></script>
+    <script src="js/daily.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/carousel.js"></script>
   </body>
 </html>
