@@ -16,7 +16,12 @@ const previous = document.querySelector(".exhibition .btnbox .fa-chevron-left"),
     "2020.01.12~2020.05.23",
     "2020.05.12~2020.07.23",
   ],
-  imgSrcList = ["imgs/1.png", "imgs/2.png", "imgs/3.jpg", "imgs/4.jpg"],
+  imgSrcList = [
+    "imgs/exhibition/1.jpg",
+    "imgs/exhibition/2.jpg",
+    "imgs/exhibition/3.jpg",
+    "imgs/exhibition/4.jpg",
+  ],
   btn = document.querySelector(".exhibition__info__link"),
   indicators = document.querySelector(".exhibition__indicators");
 let photo = document.querySelector(".exhibition__photo"),
