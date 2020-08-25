@@ -89,6 +89,8 @@ const handlePrevious = (e) => {
     let fade = setInterval(fadeout(photo), 20);
     setTimeout(() => {
       clearInterval(fade);
+      const fadedImg = exhibition.querySelectorAll(".exhibition__photo")[1];
+      fadedImg.parentNode.removeChild(fadedImg);
     }, 400);
   };
 };
