@@ -15,15 +15,17 @@
 .daily__mosaic {
   margin-top: 30px;
   width: 100%;
-  height: 900px;
   display: grid;
-  grid-template-columns: 30fr 20fr 8fr 12fr 17fr;
-  grid-template-rows: 25fr 19fr 6fr 13fr;
+  gap: 1vw;
+  grid-template-columns: repeat(4, 22vw);
+  grid-template-rows: repeat(6, 22vw);
   grid-template-areas:
-    "a b b c c"
-    "a d e e f"
-    "g h e e f"
-    "g h i i i";
+    "a b c c"
+    "a d e e"
+    "f f e e"
+    "g h i j"
+    "k l m j"
+    "n n o p";
 }
 .hide {
   display: none;
@@ -61,8 +63,36 @@
   grid-area: h;
   background-color: #096e39;
 }
-.daily__mosaic__card:last-child {
+.daily__mosaic__card:nth-child(9) {
   grid-area: i;
+  background-color: #193b29;
+}
+.daily__mosaic__card:nth-child(10) {
+  grid-area: j;
+  background-color: #193b29;
+}
+.daily__mosaic__card:nth-child(11) {
+  grid-area: k;
+  background-color: #193b29;
+}
+.daily__mosaic__card:nth-child(12) {
+  grid-area: l;
+  background-color: #193b29;
+}
+.daily__mosaic__card:nth-child(13) {
+  grid-area: m;
+  background-color: #193b29;
+}
+.daily__mosaic__card:nth-child(14) {
+  grid-area: n;
+  background-color: #193b29;
+}
+.daily__mosaic__card:nth-child(15) {
+  grid-area: o;
+  background-color: #193b29;
+}
+.daily__mosaic__card:nth-child(16) {
+  grid-area: p;
   background-color: #193b29;
 }
 
@@ -71,15 +101,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
-.daily__mosaic__card:hover {
-  transform: translate(2px, -2px);
+
+.daily__mosaic__card__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .daily__mosaic__card__buttons {
   align-self: flex-end;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 
 .daily__mosaic__card__buttons button {
@@ -94,28 +130,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 .daily__mosaic__card__info {
   padding-left: 30px;
+  margin-bottom: 20px;
   display: grid;
-  grid-template-columns: 1fr 7fr 1fr;
+  grid-template-columns: 50px 1fr 30px;
 }
 .daily__mosaic__card__info__column-1 {
   width: 30px;
   height: 30px;
+  z-index: 2;
+  font-family: "GmarketSansTTFLight";
 }
 .daily__mosaic__card__info__column-1 img {
   width: 30px;
   height: 30px;
   border-radius: 15px;
+  z-index: 2;
 }
 .daily__mosaic__card__info__column-2 {
   color: white;
-  font-family: "GmarketSansTTFLight";
+  z-index: 2;
 }
 .daily__mosaic__card__info__column-3 {
   color: white;
+  z-index: 2;
 }
 
 .hidden {

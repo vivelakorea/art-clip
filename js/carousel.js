@@ -1,6 +1,8 @@
 const previous = document.querySelector(".exhibition .btnbox .fa-chevron-left"),
   next = document.querySelector(".exhibition .btnbox .fa-chevron-right"),
   exhibition = document.querySelector(".exhibition"),
+  btn = document.querySelector(".exhibition__info__link"),
+  indicators = document.querySelector(".exhibition__indicators"),
   btnColorList = ["grey", "#87ceeb", "pink", "#8CE6B6"],
   backgroundColorList = ["black", "blue", "red", "green"],
   exhibitionNameList = ["DESIGN DOERS.", "THE GIFTED", "전시3", "전시4"],
@@ -21,9 +23,8 @@ const previous = document.querySelector(".exhibition .btnbox .fa-chevron-left"),
     "imgs/exhibition/2.jpg",
     "imgs/exhibition/3.jpg",
     "imgs/exhibition/4.jpg",
-  ],
-  btn = document.querySelector(".exhibition__info__link"),
-  indicators = document.querySelector(".exhibition__indicators");
+  ];
+
 let photo = document.querySelector(".exhibition__photo"),
   counter = 0;
 
@@ -85,8 +86,10 @@ const handlePrevious = (e) => {
   photo_tmp.onload = () => {
     set();
     exhibition.insertBefore(photo_tmp, photo);
-    let fade = setInterval(fadeout(photo), 400);
-    setTimeout(clearInterval(fade), 400);
+    let fade = setInterval(fadeout(photo), 20);
+    setTimeout(() => {
+      clearInterval(fade);
+    }, 400);
   };
 };
 
