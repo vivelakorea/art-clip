@@ -18,23 +18,27 @@ const cards = document.querySelectorAll(".daily__mosaic__card"),
     "imgs/cards/16.png",
   ];
 function handleMouseover(e) {
-  const card = e.target;
-  const buttons = card.querySelector(".daily__mosaic__card__buttons");
-  const info = card.querySelector(".daily__mosaic__card__info");
+  const card = e.target,
+    buttons = card.querySelector(".daily__mosaic__card__buttons"),
+    info = card.querySelector(".daily__mosaic__card__info"),
+    cardImg = card.querySelector(".daily__mosaic__card__img");
   if (buttons && info) {
     buttons.classList.remove("hidden");
     info.classList.remove("hidden");
   }
+  cardImg.style = "transform:scale(1.1)";
 }
 
 function handleMouseout(e) {
-  const card = e.target;
-  const buttons = card.querySelector(".daily__mosaic__card__buttons");
-  const info = card.querySelector(".daily__mosaic__card__info");
+  const card = e.target,
+    buttons = card.querySelector(".daily__mosaic__card__buttons"),
+    info = card.querySelector(".daily__mosaic__card__info"),
+    cardImg = card.querySelector(".daily__mosaic__card__img");
   if (buttons && info) {
     buttons.classList.add("hidden");
     info.classList.add("hidden");
   }
+  cardImg.style = "transform:scale(1)";
 }
 
 function init() {

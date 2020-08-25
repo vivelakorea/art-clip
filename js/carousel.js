@@ -105,7 +105,11 @@ const handleNext = (e) => {
     set();
     exhibition.insertBefore(photo_tmp, photo);
     let fade = setInterval(fadeout(photo), 400);
-    setTimeout(clearInterval(fade), 400);
+    setTimeout(() => {
+      clearInterval(fade);
+      const fadedImg = exhibition.querySelectorAll(".exhibition__photo")[1];
+      fadedImg.parentNode.removeChild(fadedImg);
+    }, 400);
   };
 };
 
