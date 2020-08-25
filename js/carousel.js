@@ -2,6 +2,7 @@ const previous = document.querySelector(".exhibition .btnbox .fa-chevron-left"),
   next = document.querySelector(".exhibition .btnbox .fa-chevron-right"),
   exhibition = document.querySelector(".exhibition"),
   btn = document.querySelector(".exhibition__info__link"),
+  link = document.querySelector(".exhibition__info__anchor"),
   indicators = document.querySelector(".exhibition__indicators"),
   btnColorList = ["grey", "#87ceeb", "pink", "#8CE6B6"],
   backgroundColorList = ["black", "blue", "red", "green"],
@@ -23,6 +24,12 @@ const previous = document.querySelector(".exhibition .btnbox .fa-chevron-left"),
     "imgs/exhibition/2.jpg",
     "imgs/exhibition/3.jpg",
     "imgs/exhibition/4.jpg",
+  ],
+  exhibitionLinkList = [
+    "http://hongikid.ac.kr/exhibitions/2019",
+    "http://hongikid.ac.kr/exhibitions/2018",
+    "#",
+    "#",
   ];
 
 let photo = document.querySelector(".exhibition__photo"),
@@ -56,6 +63,7 @@ const set = () => {
   exhibition.querySelector(".exhibition__info__date").innerHTML =
     exhibitionDateList[counter];
   indicate(counter);
+  link.setAttribute("href", exhibitionLinkList[counter]);
 
   btn.addEventListener("mouseenter", () => {
     btn.style.backgroundColor = btnColorList[counter];
