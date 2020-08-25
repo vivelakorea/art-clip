@@ -2,13 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 50px;
   padding: 0 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .header__logo {
   position: relative;
+  margin: 0 15px;
   width: 120px;
   font-size: 20px;
   font-weight: 900;
@@ -18,15 +19,15 @@
 .header__logo .green-dot {
   position: absolute;
   background-color: #8ce6b6;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   border-radius: 12px;
-  right: 20px;
-  top: -8px;
+  right: 15px;
+  top: -5px;
   z-index: -1;
 }
 .header__column {
-  width: 540px;
+  width: 400px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -44,7 +45,7 @@
   all: unset;
   float: right;
   width: 0;
-  height: 25px;
+  height: 30px;
   border-radius: 12.5px;
   transition: 0.4s;
   border-color: #33b57080;
@@ -57,14 +58,14 @@
   box-shadow: 0px 0px 39px #33b57080;
   padding-left: 20px;
   font-family: "GmarketSansTTFLight";
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .search-form i {
   display: inline-block;
   position: absolute;
-  right: 5px;
-  top: 4px;
+  right: 10px;
+  top: 7.5px;
 }
 
 .header__column__search .fa-search {
@@ -86,10 +87,12 @@
 
 .header__column__divider {
   width: 1px;
-  height: 40px;
+  height: 30px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .header__column__profile i {
-  font-size: 40px;
+  position: relative;
+  right: -50px;
+  font-size: 30px;
 }
