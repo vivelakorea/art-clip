@@ -15,7 +15,7 @@
 .green-box {
   width: 60px;
   height: 10px;
-  background-color: #8ce6b6;
+  background-color: var(--purple);
   position: absolute;
   bottom: 7px;
   left: -5px;

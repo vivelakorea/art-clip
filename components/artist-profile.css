@@ -1,0 +1,123 @@
+.artist-profile {
+  display: flex;
+  width: 100%;
+  height: 480px;
+}
+
+.artist-profile__column:first-child {
+  position: relative;
+  width: 27%;
+}
+
+.artist-profile__follow-container {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.artist-profile__info {
+  padding: 100px 80px;
+  font-size: 18px;
+}
+
+.artist-profile__info__photo > i {
+  font-size: 90px;
+}
+
+.artist-profile__info__name {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.artist-profile__info__discription {
+  margin-top: 10px;
+}
+
+.artist-profile__info__location {
+  margin-top: 30px;
+}
+
+.artist-profile__info__location > i {
+  margin-right: 13px;
+}
+
+.artist-profile__column:last-child {
+  position: relative;
+  width: 73%;
+  background-color: black;
+}
+
+.artist-profile__column:last-child a {
+  position: absolute;
+  padding: 15px 30px;
+  right: 30px;
+  bottom: 30px;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  color: white;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.artist__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 300px;
+  height: 100px;
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+  font-size: 23px;
+}
+
+.artist__nav__column {
+  display: flex;
+  align-items: center;
+}
+
+.artist__nav span:last-child {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  margin-left: 7px;
+}
+
+.works__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 30px 150px;
+}
+
+.works__card {
+  box-sizing: border-box;
+  margin-top: 30px;
+  padding: 20px;
+  height: 350px;
+  width: 350px;
+  background-color: grey;
+}
+
+.works__card__info {
+  position: relative;
+  color: white;
+  font-family: "GmarketSansTTFLight";
+  top: 260px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.works__card__info__photo {
+  font-size: 50px;
+  width: 50px;
+}
+
+.works__card__info__text {
+  font-size: 20px;
+  color: white;
+  font-family: "GmarketSansTTFLight";
+  align-self: center;
+}

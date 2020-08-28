@@ -1,11 +1,12 @@
 @import "reset.css";
+@import "variables.css";
 
 @import "components/header.css";
 @import "components/nav.css";
 @import "components/exhibition.css";
 @import "components/daily.css";
 
-@import "components/artist.css";
+@import "components/artist-profile.css";
 
 @font-face {
   font-family: "GmarketSansTTFMedium";
