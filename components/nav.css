@@ -12,12 +12,26 @@
   position: relative;
 }
 
-.green-box {
+.nav__showcase {
+  position: relative;
+}
+
+.purple-box-home {
   width: 60px;
   height: 10px;
   background-color: var(--purple);
   position: absolute;
   bottom: 7px;
   left: -5px;
+  z-index: -1;
+}
+
+.purple-box-showcase {
+  width: 80px;
+  height: 10px;
+  background-color: var(--purple);
+  position: absolute;
+  bottom: 7px;
+  left: -4px;
   z-index: -1;
 }
