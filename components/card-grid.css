@@ -1,0 +1,73 @@
+/*전체 그리드 크기*/
+
+.card-grid {
+  width: 95vw;
+  gap: 2vw;
+  margin: 2vw;
+  display: grid;
+  overflow: hidden;
+}
+
+/*반응형 그리드*/
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-grid__card__img {
+    height: 30vw;
+  }
+  .card-grid__card__description {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 512px) and (max-width: 1023px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-grid__card__img {
+    height: 50vw;
+  }
+  .card-grid__card__description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 511px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-grid__card__img {
+    height: 50vw;
+  }
+  .card-grid__card__description {
+    font-size: 0.7em;
+  }
+}
+
+/*img*/
+
+.card-grid__card__img {
+  background-color: black;
+  width: 100%;
+  border-radius: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*card description*/
+
+.card-grid__card__description {
+  margin-top: 1vw;
+  padding-left: 3vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+}
+
+.card-grid__card__description__date {
+  font-size: 50%;
+  display: flex;
+  align-items: flex-end;
+}

@@ -6,8 +6,8 @@
 @import "components/exhibition.css";
 @import "components/daily.css";
 @import "components/showcase.css";
-
 @import "components/artist-profile.css";
+@import "components/card-grid.css";
 
 @font-face {
   font-family: "GmarketSansTTFMedium";
