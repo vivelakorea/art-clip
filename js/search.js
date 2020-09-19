@@ -8,7 +8,7 @@ const handleSearchClick = () => {
 };
 
 const handleSearchleave = () => {
-  searchText.classList.remove("search-text-expand");
+  setTimeout(() => searchText.classList.remove("search-text-expand"), 1000);
 };
 
 header.addEventListener("mouseleave", handleSearchleave);

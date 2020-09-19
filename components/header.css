@@ -46,19 +46,19 @@
   float: right;
   width: 0;
   height: 30px;
-  border-radius: 12.5px;
+  border-radius: 15px;
   transition: 0.4s;
   border-color: var(--purple);
 }
 
 .search-text-expand {
   width: 200px;
-  border: 1px solid var(--purple);
+  border: none;
   padding-right: 20px;
   box-shadow: 0px 0px 39px var(--purple);
   padding-left: 20px;
   font-family: "GmarketSansTTFLight";
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .search-form i {
