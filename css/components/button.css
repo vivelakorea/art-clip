@@ -12,7 +12,7 @@
 }
 
 .select {
-  padding: 12px 50px 12px 30px;
+  padding: 10px 50px 10px 20px;
   border: 0.5px solid black;
   border-radius: 50px;
   font-size: 22px;
@@ -24,5 +24,5 @@
 .select-arrow {
   position: absolute;
   right: 20px;
-  top: 18px;
+  top: 15px;
 }

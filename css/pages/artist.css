@@ -116,9 +116,9 @@
 /* 전체 그리드 */
 
 .artist__card-grid {
-  width: 80vw;
+  width: 94vw;
   gap: 2vw;
-  margin: 2vw 10vw;
+  margin: 2vw 3vw;
   display: grid;
   overflow: hidden;
 }
@@ -127,32 +127,39 @@
 
 @media (min-width: 1024px) {
   .artist__card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .artist__card-grid__card__img {
+    height: 22vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .artist__card-grid {
     grid-template-columns: repeat(3, 1fr);
   }
   .artist__card-grid__card__img {
-    height: 25vw;
+    height: 30vw;
   }
 }
 
-@media (min-width: 512px) and (max-width: 1023px) {
+@media (min-width: 512px) and (max-width: 767px) {
+  .artist__card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .artist__card-grid__card__img {
+    height: 48vw;
+  }
+}
+
+@media (max-width: 512px) {
   .artist__card-grid {
     grid-template-columns: repeat(1, 1fr);
   }
   .artist__card-grid__card__img {
-    height: 40vw;
+    height: 94vw;
   }
 }
-
-@media (max-width: 511px) {
-  .artist__card-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .artist__card-grid__card__img {
-    height: 80vw;
-  }
-}
-
-/*img*/
 
 .artist__card-grid__card__img {
   background-color: black;
@@ -160,4 +167,52 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.artist__card-grid__card__description {
+  margin-top: 0.7vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.artist__card-grid__card__description__column__title {
+  font-size: 22px;
+}
+
+.artist__card-grid__card__description__column__artist {
+  margin-top: 5px;
+  font-size: 80%;
+}
+
+.artist__card-grid__card__description__column:last-child {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* artist info */
+
+.artist-info {
+  display: flex;
+  margin-top: 70px;
+  font-size: 20px;
+  margin-bottom: 200px;
+}
+
+.artist-info__column:first-child {
+  margin-left: 280px;
+}
+
+.artist-info__column:last-child {
+  margin-left: 50px;
+}
+
+/* artist works */
+
+.artist__works__edit {
+  margin: 3vw;
+  display: flex;
+  float: right;
+}
+
+.artist__works__edit__column {
+  margin-left: 15px;
 }
