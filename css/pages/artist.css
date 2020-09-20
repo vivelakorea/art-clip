@@ -1,3 +1,5 @@
+/* profile */
+
 .artist-profile {
   display: flex;
   width: 100%;
@@ -62,6 +64,8 @@
   cursor: pointer;
 }
 
+/* nav */
+
 .artist__nav {
   border-top: var(--main-border);
   border-bottom: var(--main-border);
@@ -80,6 +84,10 @@
 .artist__nav__text__column {
   display: flex;
   align-items: center;
+}
+
+.artist__nav__text__column a {
+  cursor: pointer;
 }
 
 .artist__nav__text__column span:last-child {
@@ -141,4 +149,53 @@
   color: white;
   font-family: "GmarketSansTTFLight";
   align-self: center;
+}
+
+/* 전체 그리드 */
+
+.artist__card-grid {
+  width: 80vw;
+  gap: 2vw;
+  margin: 2vw 10vw;
+  display: grid;
+  overflow: hidden;
+}
+
+/* 반응형 그리드 */
+
+@media (min-width: 1024px) {
+  .artist__card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .artist__card-grid__card__img {
+    height: 25vw;
+  }
+}
+
+@media (min-width: 512px) and (max-width: 1023px) {
+  .artist__card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .artist__card-grid__card__img {
+    height: 40vw;
+  }
+}
+
+@media (max-width: 511px) {
+  .artist__card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .artist__card-grid__card__img {
+    height: 80vw;
+  }
+}
+
+/*img*/
+
+.artist__card-grid__card__img {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

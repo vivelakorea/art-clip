@@ -1,0 +1,14 @@
+.artist-info {
+  display: flex;
+  margin-top: 70px;
+  font-size: 20px;
+  margin-bottom: 200px;
+}
+
+.artist-info__column:first-child {
+  margin-left: 280px;
+}
+
+.artist-info__column:last-child {
+  margin-left: 50px;
+}

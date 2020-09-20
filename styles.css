@@ -1,13 +1,18 @@
 @import "reset.css";
 @import "variables.css";
 
-@import "components/header.css";
-@import "components/nav.css";
-@import "components/exhibition.css";
-@import "components/daily.css";
-@import "components/showcase.css";
-@import "components/artist-profile.css";
-@import "components/card-grid.css";
+@import "css/components/header.css";
+@import "css/components/nav.css";
+@import "css/components/daily.css";
+@import "css/components/card-grid.css";
+
+@import "css/pages/home.css";
+@import "css/pages/artist.css";
+@import "css/pages/artist-info.css";
+@import "css/pages/artist-works.css";
+@import "css/pages/artist-like.css";
+@import "css/pages/artist-archive.css";
+@import "css/pages/showcase.css";
 
 @font-face {
   font-family: "GmarketSansTTFMedium";
