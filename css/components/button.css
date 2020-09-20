@@ -1,0 +1,28 @@
+.edit-button {
+  padding: 12px 30px;
+  border: 0.5px solid black;
+  border-radius: 50px;
+  font-size: 22px;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+.select-container {
+  position: relative;
+}
+
+.select {
+  padding: 12px 50px 12px 30px;
+  border: 0.5px solid black;
+  border-radius: 50px;
+  font-size: 22px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+}
