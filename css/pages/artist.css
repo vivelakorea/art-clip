@@ -216,3 +216,32 @@
 .artist__works__edit__column {
   margin-left: 15px;
 }
+
+/* artist archive */
+
+.unavailable {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.artist__archive__container {
+  font-size: 25px;
+}
+
+.artist__archive__container i {
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+.artist__archive__title {
+  margin: 5vw 3vw -1vw 3vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.artist__archive__see-all {
+  margin-top: -1vw;
+  align-items: center;
+  margin-right: 3vw;
+  display: flex;
+  justify-content: flex-end;
+}

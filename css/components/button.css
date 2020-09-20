@@ -26,3 +26,7 @@
   right: 20px;
   top: 15px;
 }
+
+.unavailable {
+  color: rgba(0, 0, 0, 0.3);
+}
