@@ -15,7 +15,9 @@
   font-weight: 900;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
+
 .header__logo .green-dot {
   position: absolute;
   background-color: var(--purple);
