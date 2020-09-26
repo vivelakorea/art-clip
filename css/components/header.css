@@ -17,17 +17,15 @@
   justify-content: center;
   cursor: pointer;
 }
-
-.header__logo .green-dot {
-  position: absolute;
-  background-color: var(--purple);
-  width: 18px;
-  height: 18px;
-  border-radius: 12px;
-  right: 15px;
-  top: -5px;
+.header__logo__circle {
   z-index: -1;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: -5px;
 }
+
 .header__column {
   width: 400px;
   display: flex;
