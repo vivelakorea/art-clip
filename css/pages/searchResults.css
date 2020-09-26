@@ -1,10 +1,9 @@
 .search__nav {
   font-family: Noto Sans CJK KR;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-left: 10px;
   display: flex;
   justify-content: space-between;
-  column-gap: 1fr;
 }
 
 .search__nav__text {
@@ -23,15 +22,40 @@
 }
 
 /*select*/
+.selects {
+  margin-right: 20px;
+}
 
 .select-container {
   display: inline-block;
 }
 
 .select {
-  width: min-content;
+  padding: 5px 20px 5px 20px;
   font-family: Noto Sans CJK KR;
-  font-size: 1vw;
+  font-size: 16px;
   color: var(--purple);
   border-color: var(--purple);
+}
+
+@media (max-width: 675px) {
+  .search__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .select {
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .search__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .select {
+    margin-top: 10px;
+    padding: 5px 5px 5px 5px;
+  }
 }
