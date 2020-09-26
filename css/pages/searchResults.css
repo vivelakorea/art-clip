@@ -1,0 +1,37 @@
+.search__nav {
+  font-family: Noto Sans CJK KR;
+  margin-top: 100px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1fr;
+}
+
+.search__nav__text {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+}
+
+.search__nav__text__column {
+  padding: 0 10px;
+}
+
+.search__nav__text__column:nth-child(1),
+.search__nav__text__column:nth-child(2) {
+  border-right: var(--main-border);
+}
+
+/*select*/
+
+.select-container {
+  display: inline-block;
+}
+
+.select {
+  width: min-content;
+  font-family: Noto Sans CJK KR;
+  font-size: 1vw;
+  color: var(--purple);
+  border-color: var(--purple);
+}

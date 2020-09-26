@@ -11,6 +11,7 @@
 @import "css/pages/home.css";
 @import "css/pages/artist.css";
 @import "css/pages/showcase.css";
+@import "css/pages/searchResults.css";
 
 @font-face {
   font-family: "GmarketSansTTFMedium";
@@ -28,4 +29,12 @@
 body {
   font-family: "GmarketSansTTFMedium";
   box-sizing: content-box;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  cursor: pointer;
 }
