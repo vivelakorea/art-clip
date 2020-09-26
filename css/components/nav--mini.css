@@ -1,0 +1,12 @@
+.nav--mini {
+  height: 40px;
+  border-bottom: var(--main-border);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav--mini > * {
+  margin: 0 20px;
+  cursor: pointer;
+}

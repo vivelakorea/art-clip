@@ -3,6 +3,7 @@
 
 @import "css/components/header.css";
 @import "css/components/nav.css";
+@import "css/components/nav--mini.css";
 @import "css/components/daily.css";
 @import "css/components/card-grid.css";
 @import "css/components/button.css";
