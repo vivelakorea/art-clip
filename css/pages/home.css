@@ -110,7 +110,7 @@
 
 @media (max-width: 1024px) {
   .exhibition__photo {
-    /* display: none; */
+    display: none;
   }
   .exhibition__info {
     left: 100px;
