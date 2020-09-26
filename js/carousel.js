@@ -16,7 +16,7 @@ const previous = document.querySelector(".exhibition .btnbox .fa-chevron-left"),
       link: "http://hongikid.ac.kr/exhibitions/2019",
     },
     {
-      btnColor: "87ceeb",
+      btnColor: "#87ceeb",
       backgroundColor: "blue",
       name: "THE GIFTED",
       description:
@@ -138,7 +138,7 @@ const handleNext = (e) => {
 previous.addEventListener("click", handlePrevious);
 next.addEventListener("click", handleNext);
 
-let autoCarousel = setInterval(handleNext, 5000);
+let autoCarousel = setInterval(handleNext, 10000);
 
 // 클릭하면 자동으로 넘어가는 기능 사라지게
 // previous.addEventListener("click", () => clearInterval(autoCarousel));
