@@ -42,6 +42,7 @@
 
 .exhibition__info__discription {
   font-family: "GmarketSansTTFLight";
+  width: 300px;
 }
 .exhibition__info__date {
   font-family: "GmarketSansTTFLight";
@@ -75,10 +76,10 @@
 
 .exhibition__photo {
   position: absolute;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
   bottom: -90px;
-  right: 250px;
+  left: 55%;
   border-radius: 35px;
   box-shadow: 0 0 40px grey;
   transition: 0.4s ease-in-out;
@@ -105,4 +106,10 @@
   height: 8px;
   border-radius: 4px;
   background-color: #8ce6b6;
+}
+
+@media (max-width: 1024px) {
+  .exhibition__photo {
+    display: none;
+  }
 }

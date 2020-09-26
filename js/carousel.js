@@ -10,7 +10,7 @@ const previous = document.querySelector(".exhibition .btnbox .fa-chevron-left"),
       backgroundColor: "black",
       name: "DESIGN DORES.",
       description:
-        "'行動하는 디자이너'<br> 디자인의 전통은 '실제(praxis)'를 지향한다.",
+        "'行動하는 디자이너' 디자인의 전통은 '실제(praxis)'를 지향한다.",
       date: "2020.03.12~2020.04.23",
       img: "imgs/exhibition/1.jpg",
       link: "http://hongikid.ac.kr/exhibitions/2019",
