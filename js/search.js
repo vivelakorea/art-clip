@@ -7,9 +7,8 @@ const handleSearchClick = () => {
   searchText.classList.add("search-text-expand");
 };
 
-const handleSearchleave = () => {
-  setTimeout(() => searchText.classList.remove("search-text-expand"), 1000);
-};
+//To Do: active이면 마우스 벗어나도 expand 안지워지게, 아니면 지워지게
+const handleSearchleave = () => {};
 
 header.addEventListener("mouseleave", handleSearchleave);
 searchIcon.addEventListener("click", handleSearchClick);
