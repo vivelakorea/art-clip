@@ -19,6 +19,10 @@
   }
   .card-grid__card__description {
     font-size: 1em;
+    margin-top: 1vw;
+    padding-left: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
   }
 }
 
@@ -30,7 +34,12 @@
     height: 50vw;
   }
   .card-grid__card__description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+    padding-left: 3vw;
     font-size: 1em;
+    padding-right: 20px;
   }
 }
 
@@ -43,6 +52,11 @@
   }
   .card-grid__card__description {
     font-size: 0.7em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+    padding-left: 3vw;
+    padding-right: 20px;
   }
 }
 
@@ -58,13 +72,6 @@
 }
 
 /*card description*/
-
-.card-grid__card__description {
-  margin-top: 1vw;
-  padding-left: 3vw;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr 1fr;
-}
 
 .card-grid__card__description__date {
   font-size: 50%;
