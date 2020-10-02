@@ -78,3 +78,29 @@
   display: flex;
   align-items: flex-end;
 }
+
+/*clip 전체 그리드*/
+
+.card-grid__clip {
+  width: 95vw;
+  gap: 2vw;
+  margin: 2vw;
+  display: grid;
+  overflow: hidden;
+}
+
+/* clip 검색창 반응형*/
+
+@media (min-width: 1024px) {
+  .card-grid__clip {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  .card-grid__clip__img {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    background-color: rgba(1,1,1,1);
+    border-radius: 10px;
+  }
