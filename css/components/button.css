@@ -30,3 +30,7 @@
 .unavailable {
   color: rgba(0, 0, 0, 0.3);
 }
+
+.selects__showcase {
+  text-align: right;
+}
