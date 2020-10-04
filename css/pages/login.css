@@ -1,0 +1,7 @@
+.login__main__container {
+  display: flex;
+}
+
+.login__main__img > img {
+  width: 800px;
+}
