@@ -17,3 +17,13 @@
   text-align: right;
   margin-top: 50px;
 }
+
+.showcase-search__text {
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-color: #a134ff;
+  border-radius: 16px;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
