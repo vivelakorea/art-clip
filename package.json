@@ -1,0 +1,32 @@
+{
+  "name": "art-clip",
+  "version": "1.0.0",
+  "description": "by Relation",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivelakorea/art-clip.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vivelakorea/art-clip/issues"
+  },
+  "homepage": "https://github.com/vivelakorea/art-clip#readme",
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
