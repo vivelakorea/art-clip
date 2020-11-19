@@ -7,6 +7,7 @@ const JOIN = '/join';
 const LOGIN = '/login';
 const LOGOUT = '/logout';
 const SEARCH = '/search';
+const SHOWCASE = '/showcase'
 
 
 //Users
@@ -40,7 +41,8 @@ const routes = {
     upload: UPLOAD,
     imageDetail: IMAGE_DETAIL,
     editImage: EDIT_IMAGE,
-    deleteImage: DELETE_IMAGE
+    deleteImage: DELETE_IMAGE,
+    showcase: SHOWCASE
 };
 
 export default routes;
