@@ -1,0 +1,107 @@
+/*전체 그리드 크기*/
+
+.card-grid {
+  width: 95vw;
+  gap: 2vw;
+  margin: 2vw;
+  display: grid;
+  overflow: hidden;
+}
+
+/*반응형 그리드*/
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-grid__card__img {
+    height: 30vw;
+  }
+  .card-grid__card__description {
+    font-size: 1em;
+    margin-top: 1vw;
+    padding-left: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 512px) and (max-width: 1023px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-grid__card__img {
+    height: 50vw;
+  }
+  .card-grid__card__description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+    padding-left: 3vw;
+    font-size: 1em;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 511px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-grid__card__img {
+    height: 50vw;
+  }
+  .card-grid__card__description {
+    font-size: 0.7em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+    padding-left: 3vw;
+    padding-right: 20px;
+  }
+}
+
+/*img*/
+
+.card-grid__card__img {
+  background-color: black;
+  width: 100%;
+  border-radius: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*card description*/
+
+.card-grid__card__description__date {
+  font-size: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+
+/*clip 전체 그리드*/
+
+.card-grid__clip {
+  width: 95vw;
+  gap: 2vw;
+  margin: 2vw;
+  display: grid;
+  overflow: hidden;
+}
+
+/* clip 검색창 반응형*/
+
+@media (min-width: 1024px) {
+  .card-grid__clip {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+}
+.card-grid__clip__img {
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  background-color: rgba(1, 1, 1, 1);
+  border-radius: 10px;
+}

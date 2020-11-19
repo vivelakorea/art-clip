@@ -1,0 +1,19 @@
+<header class="header js-header">
+      <div class="header__logo">
+        <a href=#{routes.home}>#{siteName}<img class="header__logo__circle" src="../../assets/css/imgs/favicon.png" alt=""/></a></div>
+      <div class="header__column">
+        <div class="header__column__search">
+          <form class="search-form js-searchForm" action="#{routes.search}" method="GET">
+            <input class="search-text js-searchText" type="text" placeholder="조건을 검색하세요" name="term" />
+            <i class="fas fa-search"></i>
+          </form>
+        </div>
+        <div class="header__column__signin">
+          <a href=#{routes.login}>로그인</a>
+        </div>
+        <div class="header__column__divider"></div>
+        <div class="header__column__signup">
+          <a href=#{routes.join}>회원가입</a>
+        </div>
+      </div>
+</header>

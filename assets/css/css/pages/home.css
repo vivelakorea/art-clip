@@ -1,0 +1,118 @@
+.exhibition {
+  height: 380px;
+  position: relative;
+  transition: 0.4s ease-in-out;
+}
+
+.exhibition i {
+  color: white;
+  font-size: 33px;
+  cursor: pointer;
+}
+
+.exhibition__social {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.exhibition__social i {
+  font-size: 15px;
+  margin: 0 10px;
+}
+.btnbox {
+  display: flex;
+  height: 380px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.exhibition__info {
+  position: absolute;
+  bottom: 70px;
+  left: 183px;
+  height: 230px;
+  color: white;
+}
+
+.exhibition__info__name {
+  font-size: 40px;
+  height: 50px;
+}
+
+.exhibition__info__discription {
+  font-family: "GmarketSansTTFLight";
+  width: 300px;
+}
+.exhibition__info__date {
+  font-family: "GmarketSansTTFLight";
+  margin-top: 100px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 15px;
+}
+.exhibition__info__link {
+  all: unset;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "GmarketSansTTFLight";
+  font-size: 20px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  bottom: -20px;
+}
+
+.exhibition__info__link:hover {
+  background-color: #8ce6b6;
+}
+
+.exhibition__photo {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  bottom: -90px;
+  left: 55%;
+  border-radius: 35px;
+  box-shadow: 0 0 40px grey;
+  transition: 0.4s ease-in-out;
+}
+
+.exhibition__indicators {
+  display: flex;
+  position: absolute;
+  left: 50px;
+  bottom: -20px;
+}
+
+.exhibition__indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: black;
+  margin: 0 10px;
+  transition: 0.4s ease-in-out;
+}
+
+.exhibition__indicator-current {
+  width: 32px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #8ce6b6;
+}
+
+@media (max-width: 1024px) {
+  .exhibition__photo {
+    display: none;
+  }
+  .exhibition__info {
+    left: 100px;
+  }
+}

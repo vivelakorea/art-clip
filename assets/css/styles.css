@@ -1,0 +1,43 @@
+@import "reset.css";
+@import "variables.css";
+
+@import "css/components/header.css";
+@import "css/components/nav.css";
+@import "css/components/nav--mini.css";
+@import "css/components/daily.css";
+@import "css/components/card-grid.css";
+@import "css/components/button.css";
+@import "css/components/select.css";
+
+@import "css/pages/home.css";
+@import "css/pages/artist.css";
+@import "css/pages/login.css";
+@import "css/pages/showcase.css";
+@import "css/pages/searchResults.css";
+
+/* 폰트쓰는법 몰라서 일단 빼둠
+ @font-face {
+  font-family: "GmarketSansTTFMedium";
+  src: url("GmarketSansTTF/GmarketSansTTFMedium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GmarketSansTTFBold";
+  src: url("GmarketSansTTF/GmarketSansTTFBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GmarketSansTTFLight";
+  src: url("GmarketSansTTF/GmarketSansTTFLight.ttf") format("truetype");
+}
+*/
+body {
+  /*font-family: "GmarketSansTTFMedium";*/
+  box-sizing: content-box;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  cursor: pointer;
+}
