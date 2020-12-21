@@ -1,7 +1,4 @@
-.DS_store
- node_modules
-
- # Logs
+# Logs
 logs
 *.log
 npm-debug.log*
@@ -116,14 +113,12 @@ dist
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
-<<<<<<< Updated upstream
-.pnp.*
-=======
+
 .pnp.*
 
 package-lock.json
 
 # 원래 있던 파일
+
 .DS_store
-node_modules
->>>>>>> Stashed changes
+
