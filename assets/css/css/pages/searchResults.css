@@ -1,0 +1,22 @@
+.search__nav {
+  font-family: Noto Sans CJK KR;
+  margin-top: 80px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search__nav__text {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+}
+
+.search__nav__text__column {
+  padding: 0 10px;
+}
+
+.search__nav__text__column:nth-child(1),
+.search__nav__text__column:nth-child(2) {
+  border-right: var(--main-border);
+}

@@ -1,0 +1,237 @@
+/* profile */
+
+.artist-profile {
+  display: flex;
+  width: 100%;
+  height: 480px;
+}
+
+.artist-profile__column:first-child {
+  position: relative;
+  width: 27%;
+}
+
+.artist-profile__follow-container {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.artist-profile__info {
+  padding: 100px 80px;
+  font-size: 18px;
+}
+
+.artist-profile__info__photo > i {
+  font-size: 90px;
+}
+
+.artist-profile__info__name {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.artist-profile__info__discription {
+  margin-top: 10px;
+}
+
+.artist-profile__info__location {
+  margin-top: 30px;
+}
+
+.artist-profile__info__location > i {
+  margin-right: 13px;
+}
+
+.artist-profile__column:last-child {
+  position: relative;
+  width: 73%;
+  background-color: black;
+  color: white;
+}
+
+.artist-profile__column:last-child a {
+  position: absolute;
+  padding: 15px 30px;
+  right: 30px;
+  bottom: 30px;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+/* nav */
+
+.artist__nav {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+
+.artist__nav__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 300px;
+  font-size: 21px;
+}
+
+.artist__nav__text__column {
+  display: flex;
+  align-items: center;
+  padding: 40px 30px;
+  border-bottom: 5px solid white;
+}
+
+.artist__nav__text > .highlighted {
+  border-bottom: 5px solid var(--purple);
+}
+
+.artist__nav__text__column a {
+  cursor: pointer;
+}
+
+.artist__nav__text__column:nth-child(2) > span:last-child,
+.artist__nav__text__column:nth-child(3) > span:last-child,
+.artist__nav__text__column:last-child > span:last-child {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  margin-left: 7px;
+}
+
+/* 전체 그리드 */
+
+.artist__card-grid {
+  width: 94vw;
+  gap: 2vw;
+  margin: 2vw 3vw;
+  display: grid;
+  overflow: hidden;
+}
+
+/* 반응형 그리드 */
+
+@media (min-width: 1024px) {
+  .artist__card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .artist__card-grid__card__img {
+    height: 22vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .artist__card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .artist__card-grid__card__img {
+    height: 30vw;
+  }
+}
+
+@media (min-width: 512px) and (max-width: 767px) {
+  .artist__card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .artist__card-grid__card__img {
+    height: 48vw;
+  }
+}
+
+@media (max-width: 512px) {
+  .artist__card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .artist__card-grid__card__img {
+    height: 94vw;
+  }
+}
+
+.artist__card-grid__card__img {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist__card-grid__card__description {
+  margin-top: 0.7vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.artist__card-grid__card__description__column__title {
+  font-size: 22px;
+}
+
+.artist__card-grid__card__description__column__artist {
+  margin-top: 5px;
+  font-size: 80%;
+}
+
+.artist__card-grid__card__description__column:last-child {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* artist info */
+
+.artist-info {
+  display: flex;
+  margin-top: 70px;
+  font-size: 20px;
+  margin-bottom: 200px;
+}
+
+.artist-info__column:first-child {
+  margin-left: 280px;
+}
+
+.artist-info__column:last-child {
+  margin-left: 50px;
+}
+
+/* artist works */
+
+.artist__works__edit {
+  margin: 3vw;
+  display: flex;
+  float: right;
+}
+
+.artist__works__edit__column {
+  margin-left: 15px;
+}
+
+/* artist archive */
+
+.unavailable {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.artist__archive__container {
+  font-size: 25px;
+}
+
+.artist__archive__container i {
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+.artist__archive__title {
+  margin: 5vw 3vw -1vw 3vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.artist__archive__see-all {
+  margin-top: -1vw;
+  align-items: center;
+  margin-right: 3vw;
+  display: flex;
+  justify-content: flex-end;
+}
