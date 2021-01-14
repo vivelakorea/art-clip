@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "by Relation",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev:server": "nodemon --exec babel-node init.js",
     "dev:assets": "cross-env WEBPACK_ENV=development webpack -w",
